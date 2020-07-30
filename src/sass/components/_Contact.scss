@@ -1,0 +1,60 @@
+.Contact {
+  margin: 8rem 0 2rem 0;
+  padding: 2rem;
+
+  // &__logo {
+  //   width: 12%;
+  // }
+
+  &__box {
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 8rem;
+    background-color: $color-white;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-smooth-xs;
+
+    @include bp(tab-port) {
+      padding: 4rem;
+    }
+    &-row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0;
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    margin-right: 1rem;
+
+    &-linkedin {
+      width: 4rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      margin-top: 0.2rem;
+      text-align: left;
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-secondary;
+      font-weight: 600;
+      line-height: 2;
+
+      transition: all 0.1s;
+
+      &:active,
+      &:hover {
+        color: $color-secondary-light;
+      }
+    }
+  }
+}

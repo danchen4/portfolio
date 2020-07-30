@@ -1,0 +1,72 @@
+//COLORS
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #f3f3f3;
+$color-grey-light-3: #d9d9d9;
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-primary: #ffee58;
+$color-primary-light: #ffff8b;
+$color-primary-dark: #c9bc1f;
+
+$color-secondary: #1976d2;
+$color-secondary-light: #63a4ff;
+$color-secondary-dark: #004ba0;
+
+$color-tertiary: #424242;
+$color-tertiary-light: #6d6d6d;
+$color-tertiary-dark: #1b1b1b;
+
+// BOX SHADOW
+$shadow-xs: 0 0.5rem 2rem rgba($color-black, 0.08);
+$shadow-sm: 0 0.8rem 2.5rem rgba($color-black, 0.1);
+$shadow-md: 0 1.5rem 4rem rgba($color-black, 0.15);
+$shadow-lg: 0 2rem 5rem rgba($color-black, 0.2);
+
+$shadow-smooth-xs: 0 0.1rem 0.1rem rgba($color-black, 0.1), 0 0.2rem 0.2rem rgba($color-black, 0.12),
+  0 0.4rem 0.4rem rgba($color-black, 0.1), 0 0.8rem 0.8rem rgba($color-black, 0.06);
+
+$shadow-smooth-sm: 0 0.1rem 0.1rem rgba($color-black, 0.2), 0 0.2rem 0.2rem rgba($color-black, 0.16),
+  0 0.4rem 0.4rem rgba($color-black, 0.12), 0 0.8rem 0.8rem rgba($color-black, 0.08),
+  0 1.6rem 1.6rem rgba($color-black, 0.04);
+
+$shadow-smooth-md: 0 0.1rem 0.1rem rgba($color-black, 0.07),
+  0 0.2rem 0.4rem rgba($color-black, 0.07), 0 0.4rem 0.8rem rgba($color-black, 0.07),
+  0 0.8rem 1.6rem rgba($color-black, 0.07), 0 1.6rem 3.2em rgba($color-black, 0.07);
+
+// Neomorphism
+$shadow-neo: 1rem 1rem 1.6rem 0 rgba(0, 0, 0, 0.2),
+  -0.8rem -0.8rem 1.2rem 0 rgba(255, 255, 255, 0.7);
+
+$shadow-neo-light: 0.8rem 0.8rem 1.2rem 0 rgba(0, 0, 0, 0.15),
+  -0.6rem -0.6rem 1rem 0 rgba(255, 255, 255, 0.6);
+
+$shadow-neo-strong: 0.6rem 0.6rem 1rem 0 rgba(0, 0, 0, 0.2),
+  -0.8rem -0.8rem 1.2rem 0 rgba(255, 255, 255, 1);
+
+$shadow-neo-inset-br: 1rem 1rem 1.6rem 0 rgba(255, 255, 255, 0.5) inset,
+  -0.8rem -0.8rem 1.2rem 0 rgba(0, 0, 0, 0.1) inset;
+
+$shadow-neo-inset-tl: inset 0.6rem 0.6rem 1rem 0 rgba(0, 0, 0, 0.1),
+  inset -0.8rem -0.8rem 1.2rem 0 rgba(255, 255, 255, 0.5);
+
+$background-neo-convex: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 1));
+$background-neo-concave: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.3));
+
+$border-neo: 2px solid linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6));
+$border-neo-2: 2px solid black;
+
+// BORDER RADIUS
+$border-radius-sm: 0.3rem;
+$border-radius-md: 0.6rem;
+$border-radius-lg: 1rem;
+
+// WIDTH
+$width-main: 80%;
+
+// FONT SIZE
+$default-font-size: 1.6rem;

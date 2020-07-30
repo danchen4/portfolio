@@ -1,0 +1,50 @@
+.Footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10rem 0 2rem 0;
+  padding: 2rem;
+  border-top: 0.4rem solid $color-tertiary;
+
+  // &__logo {
+  //   width: 12%;
+  // }
+
+  &__box {
+    padding: 3rem 0 1rem 0;
+
+    &-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    margin-right: 1rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      margin-top: 0.2rem;
+      text-align: left;
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-secondary;
+      font-weight: 600;
+      line-height: 2;
+
+      transition: all 0.1s;
+
+      &:active,
+      &:hover {
+        color: $color-secondary-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.PageContent {
+  display: inline-block; /* establish new BFC to prevent margin collapse*/
+  margin: 10rem 0;
+
+  @include bp(tab-port) {
+    margin: 5rem 0;
+  }
+}

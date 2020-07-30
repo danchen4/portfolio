@@ -1,0 +1,21 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+@import './base/animations';
+
+@import './components/App.scss';
+@import './components/Designs';
+@import './components/PageContent.scss';
+@import './components/Header.scss';
+@import './components/Logo.scss';
+@import './components/NavMenu.scss';
+@import './components/NavMenuMobile.scss';
+@import './components/PortfolioList.scss';
+@import './components/About.scss';
+@import './components/Contact.scss';
+@import './components/Footer.scss';
+
+@import './UIcomponents/button.scss';

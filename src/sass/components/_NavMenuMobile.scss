@@ -1,0 +1,157 @@
+.NavMenuMobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__button {
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: $shadow-sm;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+
+    @include bp(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include bp(phone) {
+      display: block;
+      height: 6rem;
+      width: 6rem;
+      top: 3rem;
+      right: 3rem;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    // border-radius: 50%;
+
+    background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-2);
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: all 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+
+    &--open {
+      transform: translateX(0%);
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+
+    opacity: 0; //Opacity will still make elements selectable
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+
+    &--open {
+      opacity: 1;
+      width: 100vw;
+    }
+  }
+
+  &__list {
+    @include centerAbsolute;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-primary;
+      font-size: 3rem;
+      font-weight: 300;
+
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+      background-size: 230%;
+      transition: all 0.4s;
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+
+    &:active,
+    &:hover {
+      background-position: 100%;
+      color: $color-tertiary;
+      transform: translateX(1rem);
+    }
+  }
+
+  // ICON
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    @include bp(phone) {
+      margin-top: 3rem;
+    }
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: transform 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+
+    &--open {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}

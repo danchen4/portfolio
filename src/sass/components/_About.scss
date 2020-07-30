@@ -1,0 +1,88 @@
+.About {
+  margin-top: 10rem;
+  padding: 0 2rem;
+
+  &__story {
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 8rem;
+    background-color: $color-white;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-smooth-xs;
+
+    @include bp(tab-port) {
+      padding: 4rem;
+    }
+  }
+
+  &__shape {
+    float: left; // circle needs float;
+    width: 20rem;
+    height: 20rem; // circle needs height
+    margin-right: 4rem;
+    margin-top: 2rem;
+
+    -webkit-shape-outside: circle(50% at 50% 50%); //circle: Radius at (x , y)
+    shape-outside: circle(50% at 50% 50%); //circle: Radius at (x , y)
+    clip-path: circle(50% at 50% 50%);
+
+    position: relative;
+
+    @include bp(phone) {
+      width: 14rem;
+      height: 14rem; // circle needs height
+    }
+  }
+
+  &__img {
+    // margin-left: -rem;
+    // height: 20rem;
+    width: 20rem;
+
+    @include bp(phone) {
+      width: 14rem;
+    }
+  }
+
+  &__text {
+    margin-top: -1rem;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+
+  &__box-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  &__icon {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      margin-top: 0.2rem;
+      text-align: left;
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-secondary;
+      font-weight: 600;
+      line-height: 2;
+
+      transition: all 0.1s;
+
+      &:active,
+      &:hover {
+        color: $color-secondary-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+$cirle-height: 25rem;
+
+.Designs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem 1rem;
+
+  @include bp(phone) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  padding: 0 2rem;
+
+  &__card {
+    margin: 0 4rem;
+    padding: 2rem;
+    // background-color: $color-white;
+    // border-radius: $border-radius-md;
+    // box-shadow: $shadow-neo;
+    background-color: $color-white;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-neo$shadow-smooth-xs;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bp(tab-port) {
+      margin: 0 auto;
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 8rem;
+      }
+    }
+  }
+
+  &__shape-border {
+    position: relative;
+    margin-top: -6rem;
+    width: $cirle-height;
+    height: $cirle-height; // circle needs height
+
+    // clip-path: circle(50% at 50% 50%);
+    border-radius: 50rem;
+    box-shadow: $shadow-smooth-xs;
+  }
+
+  &__shape-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Shapes/Basic_Shapes
+    width: $cirle-height;
+    height: $cirle-height; // circle needs height
+
+    clip-path: circle(49.5% at 50% 50%);
+    z-index: 100;
+  }
+
+  &__img {
+    width: $cirle-height;
+  }
+
+  &__name {
+    color: $color-tertiary;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    display: inline-block;
+    height: 9rem;
+    font-size: 1.6rem;
+    color: $color-tertiary;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include bp(tab-port) {
+      height: 14rem;
+      font-size: 2rem;
+    }
+
+    @include bp(phone) {
+      height: auto;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__github {
+    &-label {
+      margin-right: 1rem;
+      padding: 0.5rem 2rem 0.5rem 1rem;
+      background-color: $color-tertiary;
+      clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+
+      text-transform: uppercase;
+      color: $color-white;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    &-link {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      color: $color-secondary-light;
+      text-decoration: none;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag-item {
+    margin-bottom: 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    box-shadow: $shadow-sm;
+    background-color: $color-grey-light-2;
+    // background: $background-neo-concave;
+
+    color: $color-tertiary;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      transform: translateY(-0.2rem);
+      box-shadow: $shadow-neo-light;
+    }
+
+    // position: relative;
+    // background: white;
+    // border: 5px;
+    // background-clip: padding-box; /* !importanté */
+    // border: solid 5px transparent; /* !importanté */
+
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   z-index: -1;
+    //   margin: -5px;
+    //   border-radius: inherit;
+    //   background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.6));
+    // }
+
+    @include bp(tab-port) {
+      font-size: 1.2rem;
+    }
+  }
+}
