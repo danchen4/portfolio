@@ -39,11 +39,11 @@
     width: 100vw;
     // border-radius: 50%;
 
-    background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-2);
+    background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-3);
     z-index: 1000;
 
     transform: translateX(100%);
-    transition: all 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+    transition: all 0.35s cubic-bezier(0.7, 0, 0.84, 0);
 
     &--open {
       transform: translateX(0%);

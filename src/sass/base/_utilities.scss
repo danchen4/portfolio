@@ -49,3 +49,11 @@
 .u-mtop-xl {
   margin-top: 10rem !important;
 }
+
+.mobile {
+  display: none;
+
+  @include bp(phone) {
+    display: inline-block;
+  }
+}

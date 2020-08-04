@@ -5,13 +5,22 @@ $cirle-height: 25rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 8rem 1rem;
 
+  padding: 0 2rem;
+
   @include bp(tab-port) {
     align-items: end;
   }
 
   @include bp(phone) {
     grid-template-columns: 1fr;
-  padding: 0 2rem;
+    grid-gap: 2rem;
+  }
+
+  &__header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $color-grey-dark-3;
+  }
 
   &__card {
     margin: 0 4rem;

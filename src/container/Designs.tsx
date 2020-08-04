@@ -31,7 +31,10 @@ export const Designs = () => {
 
   return (
     <PageContent>
-      <div className="Designs">{designs}</div>
+      <div className="Designs">
+        <h1 className="Designs__header mobile">Design Portfolio</h1>
+        {designs}
+      </div>
     </PageContent>
   );
 };

@@ -55,7 +55,10 @@ export const PortfolioList = () => {
 
   return (
     <PageContent>
-      <div className="PortfolioList">{portfolioList}</div>
+      <div className="PortfolioList">
+        <h1 className="PortfolioList__header mobile">Dev Portfolio</h1>
+        {portfolioList}
+      </div>
     </PageContent>
   );
 };
