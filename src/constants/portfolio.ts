@@ -69,7 +69,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     previewLink: 'https://memory-game-2eeba.web.app/',
     description: 'Put your memory to the test!  Classic memory game built with vanilla Javascript.',
     githubLink: 'https://github.com/danchen4/memorygame',
-    tags: ['Javascript', 'ES5', 'SASS', 'BEM', 'Parcel'],
+    tags: ['Javascript', 'ES6', 'SASS', 'BEM', 'Parcel'],
   },
   {
     id: 5,
@@ -78,6 +78,6 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     previewLink: 'https://codepen.io/danchen4/pen/oNXQQGZ',
     description: 'My first coding project using vanilla Javascript.',
     githubLink: 'https://github.com/danchen4/SimpleCalculator',
-    tags: ['Javascript', 'ES5'],
+    tags: ['Javascript', 'ES6'],
   },
 ];

@@ -56,7 +56,7 @@ export const PortfolioList = () => {
   return (
     <PageContent>
       <div className="PortfolioList">
-        <h1 className="PortfolioList__header mobile">Dev Portfolio</h1>
+        <h1 className="PortfolioList__header mobile">Portfolio</h1>
         {portfolioList}
       </div>
     </PageContent>
