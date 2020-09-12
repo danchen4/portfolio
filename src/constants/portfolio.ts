@@ -76,7 +76,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     name: 'Calculator',
     imageId: calculatorGIF,
     previewLink: 'https://codepen.io/danchen4/pen/oNXQQGZ',
-    description: 'My first coding project using vanilla Javascript.',
+    description:
+      'A simple calculator that allows you to save up to four variables built using vanilla Javascript.',
     githubLink: 'https://github.com/danchen4/SimpleCalculator',
     tags: ['Javascript', 'ES6'],
   },

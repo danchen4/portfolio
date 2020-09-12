@@ -17,7 +17,7 @@ export const DESIGN_PROJECTS: Design[] = [
     imageId: gagediamonds,
     previewLink: 'https://www.gagediamonds.com',
     description:
-      'Designed and coded 10+ mobile friendly landing pages with HTML5, CSS, and Boostrap.  Redesigned and oversaw the development of "design your own ring" feature.',
+      'Designed and coded 10+ mobile friendly landing pages with HTML5, CSS, and Bootstrap.  Redesigned and oversaw the development of "design your own ring" feature.',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const DESIGN_PROJECTS: Design[] = [
     imageId: lendfirm,
     previewLink: 'https://www.lendfirm.com',
     description:
-      'Designed and hand coded front-end informational Wordpress site in HTML and CSS.  UI/UX design and oversaw the development of the back-end loan application site.',
+      'Designed and coded custom Wordpress theme for front-end informational site using Javascript, HTML,CSS and PHP.  UI/UX design and oversaw the development of custom loan application portal (after clicking Login).',
   },
   {
     id: 3,
