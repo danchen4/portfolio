@@ -77,7 +77,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     imageId: calculatorGIF,
     previewLink: 'https://codepen.io/danchen4/pen/oNXQQGZ',
     description:
-      'A simple calculator that allows you to save up to four variables built using vanilla Javascript.',
+      'Simple calculator that allows you to save up to four variables built with vanilla Javascript.',
     githubLink: 'https://github.com/danchen4/SimpleCalculator',
     tags: ['Javascript', 'ES6'],
   },

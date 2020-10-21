@@ -1,5 +1,6 @@
 import React from 'react';
-import profile from '../assets/linkedin.png';
+import profile1 from '../assets/linkedin.png';
+import profile2 from '../assets/linkedin.jpg';
 import resume from '../assets/DanChenResume.pdf';
 import document from '../assets/0217-document.svg';
 
@@ -13,7 +14,7 @@ export const About = (props: Props) => {
     <div className="About">
       <div className="About__story">
         <div className="About__shape">
-          <img className="About__img" src={profile} alt="profile" />
+          <img className="About__img" src={profile2} alt="profile" />
         </div>
         <div className="About__text">
           <h3 className="heading-tertiary u-mbot-xs">About Me</h3>

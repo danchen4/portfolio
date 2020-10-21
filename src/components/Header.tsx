@@ -8,7 +8,7 @@ export const Header = () => {
         <Logo />
       </div>
       <div className="Header__text">
-        <p>Javascript, React, HTML, CSS</p>
+        <p>Javascript, Typescript, React, HTML, CSS</p>
       </div>
       <div className="Header__link"></div>
       {/* <a className="Header__link" href="https://github.com/danchen4">
