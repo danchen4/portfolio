@@ -10,6 +10,7 @@ import { PortfolioList } from './PortfolioList';
 import { About } from './About';
 import { Contact } from './Contact';
 import { Designs } from './Designs';
+import fullResume from '../assets/DanielChenResume.pdf';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/designs" render={() => <Designs />} />
           <Route exact path="/about" render={() => <About />} />
           <Route exact path="/contact" render={() => <Contact />} />
+          <Route exact path="/resume-full" render={() => <a href={fullResume}>Other Resume</a>} />
           {/* <Route exact path="/" render={() => <PortfolioList />} /> */}
           <Redirect from="*" to="/portfolio" />
         </Switch>

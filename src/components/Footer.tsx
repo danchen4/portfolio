@@ -1,6 +1,7 @@
 import React from 'react';
 import github from '../assets/github.png';
 import email from '../assets/email.svg';
+import { EMAIL, GITHUB } from '../constants';
 // import { Logo } from './Logo';
 
 export const Footer = () => {
@@ -15,7 +16,7 @@ export const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/danchen4
+            {GITHUB}
           </a>
         </div>
         <div className="Footer__box-row">
@@ -26,7 +27,7 @@ export const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            danchen4@gmail.com
+            {EMAIL}
           </a>
         </div>
       </div>

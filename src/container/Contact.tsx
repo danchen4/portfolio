@@ -4,6 +4,7 @@ import email from '../assets/email.svg';
 import document from '../assets/0217-document.svg';
 import linkedin from '../assets/linkedin-3.svg';
 import resume from '../assets/danchenresume.pdf';
+import { EMAIL, GITHUB } from '../constants';
 
 export const Contact = () => {
   return (
@@ -18,7 +19,7 @@ export const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            danchen4@gmail.com
+            {EMAIL}
           </a>
         </div>
         {/* <div className="Contact__box-row">
@@ -40,7 +41,7 @@ export const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/danchen4
+            {GITHUB}
           </a>
         </div>
       </div>
